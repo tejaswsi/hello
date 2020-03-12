@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Shopizer 2.0.5 (for java 1.8)
 -------------------
 
@@ -77,3 +78,6 @@ Please read the instructions on how to connect to MySQL, configure an email serv
 Documentation available from the wiki <https://github.com/shopizer-ecommerce/shopizer/wiki>
 
 More documentation is available on shopizer web site here <http://www.shopizer.com>
+=======
+# hello
+>>>>>>> 4bd918968c83fd5ea8c1b2486e9dd9d5c9fb754d
