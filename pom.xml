@@ -176,4 +176,16 @@
 
 	</dependencyManagement>
 
+<distributionManagement>
+    <repository>
+        <id>nexus</id>
+        <name>release</name>
+        <url>http://3.235.15.209:8081/repository/maven-releases/</url>
+    </repository>
+    <snapshotRepository>
+        <id>nexus</id>
+        <name>snapshot</name>
+        <url>http://3.235.15.209:8081/repository/maven-snapshots/</url>
+    </snapshotRepository>
+</distributionManagement>
 </project>
