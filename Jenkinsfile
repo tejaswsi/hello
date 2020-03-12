@@ -19,5 +19,15 @@ pipeline{
                 sh "mvn compile"
             }
         }
+        stage('sonar'){
+            steps{
+                build job : "sonar"
+            }
+        }
+        stage("test"){
+            steps{
+                sh "mvn test"
+            }
+        }
     }
 }
