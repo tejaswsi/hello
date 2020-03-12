@@ -21,7 +21,7 @@ pipeline{
         }
         stage('sonar'){
             steps{
-                build job : "sonar"
+                echo "sonar"
             }
         }
         stage("test"){
