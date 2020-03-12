@@ -55,6 +55,11 @@
 		    <artifactId>javax.inject</artifactId>
 		    <version>${javax.inject.version}</version>
 		</dependency>
+                <dependency>
+                    <groupId>org.sonarsource.scanner.maven</groupId>
+                    <artifactId>sonar-maven-plugin</artifactId>
+                    <version>3.0-RC1</version>
+                </dependency>
 
 		<dependency>
 		    <groupId>javax.validation</groupId>
