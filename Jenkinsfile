@@ -16,7 +16,7 @@ pipeline{
         }
         stage('compile'){
             steps {
-                echo "shabbir"
+                sh "mvn compile"
             }
         }
     }
