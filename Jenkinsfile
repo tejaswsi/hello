@@ -6,17 +6,12 @@ pipeline{
         gitParameter name: 'TAG',type: 'PT_TAG', selectedValue: 'NONE'
     }
     stages{
-        stage ('validate') {
+        stage ('compile') {
             when {
                 expression { BRANCH == 'origin/devlop' || BRANCH == 'devlop'  }
             }
             steps{
-                sh 'mvn validate'
-            }
-        }
-        stage('compile'){
-            steps {
-                sh "mvn compile"
+                sh 'mvn compile'
             }
         }
         stage('sonar'){
