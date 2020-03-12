@@ -8,7 +8,7 @@ pipeline{
     stages{
         stage ('validate') {
             when {
-                expression { BRANCH == 'origin/devlop || BRANCH == 'devlop'  }
+                expression { BRANCH == 'origin/devlop' || BRANCH == 'devlop'  }
             }
             steps{
                 sh 'mvn validate'
