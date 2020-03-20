@@ -11,7 +11,7 @@ pipeline{
                 expression { BRANCH == 'origin/devlop' || BRANCH == 'devlop'  }
             }
             steps{
-                sh 'mvn deploy'
+                sh 'mvn clean deploy'
             }
         }
         stage('compile'){
@@ -21,21 +21,6 @@ pipeline{
                 sh 'docker push 3.224.130.86:8082/shopizer-canadapost:v1'
             }
         }
-        stage('sonar'){
-            steps{
-                echo "sonar"
-            }
-        }
-        stage("test"){
-            steps{
-                sh "mvn test"
-            }
-        }
-        stage("deploy"){
-            steps{
-                sh "mvn deploy"
-                echo "shabbir"
-            }
-        }
+        
     }
 }
