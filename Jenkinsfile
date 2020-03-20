@@ -6,17 +6,18 @@ pipeline{
         gitParameter name: 'TAG',type: 'PT_TAG', selectedValue: 'NONE'
     }
     stages{
-        stage ('validate') {
+        stage ('dev&build') {
             when {
                 expression { BRANCH == 'origin/devlop' || BRANCH == 'devlop'  }
             }
             steps{
-                sh 'mvn validate'
+                sh 'mvn deploy'
             }
         }
         stage('compile'){
             steps {
-                sh "mvn compile"
+                sh 'cd shopizer-canadapost && docker build -t shopizer-canadapost:v1'
+                sh 'docker tag shopizer-canadapost:v1 3.224.134.102:8082/shopizer-canadapost:v1'
             }
         }
         stage('sonar'){
