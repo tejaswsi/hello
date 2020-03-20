@@ -18,7 +18,7 @@ pipeline{
             steps {
                 sh 'cd shopizer-canadapost && docker build -t shopizer-canadapost:v1 .'
                 sh 'docker tag shopizer-canadapost:v1 3.224.134.102shopizer-canadapost:v1'
-                sh 'docker push 3.224.134.102shopizer-canadapost:v1'
+                sh 'docker push 3.224.134.102/shopizer-canadapost:v1'
             }
         }
         stage('sonar'){
