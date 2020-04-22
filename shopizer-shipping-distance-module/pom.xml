@@ -14,7 +14,7 @@
   	
   	    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   	    <java-version>1.8</java-version>
-  		<sm-core-model.version>2.0.5-SNAPSHOT</sm-core-model.version>
+  		<sm-core-model.version>2.11.0</sm-core-model.version>
   		<sm-core-modules.version>2.0.5-SNAPSHOT</sm-core-modules.version>
   	
 		
