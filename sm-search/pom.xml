@@ -28,7 +28,7 @@
 		<org.aspectj-version>1.6.10</org.aspectj-version>
 		
 
-		<org.elasticsearch-version>2.4.1</org.elasticsearch-version>
+		<org.elasticsearch-version>6.8.17</org.elasticsearch-version>
 		<io.searchbox.jest-version>2.0.3</io.searchbox.jest-version>
         
         
