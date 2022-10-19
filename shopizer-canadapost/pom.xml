@@ -17,7 +17,7 @@
   		<sm-core-modules.version>2.0.5-SNAPSHOT</sm-core-modules.version>
   	
 		
-		<jackson-version>2.10.3</jackson-version>
+		<jackson-version>2.13.4.1</jackson-version>
 		<org.springframework-version>4.2.1.RELEASE</org.springframework-version>
 		<junit.version>4.9</junit.version>
 		<org.aspectj-version>1.6.10</org.aspectj-version>
